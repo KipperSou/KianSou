@@ -59,7 +59,7 @@ pnpm preview
 这个项目会自动处理两种场景：
 
 - 用户站点：`https://your-username.github.io`
-- 项目站点：`https://your-username.github.io/personal-blog`
+- 项目站点：`https://your-username.github.io/KianSou`
 
 ## 自定义域名
 
