@@ -1,0 +1,22 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+import { withBase } from '@/utils/base'
+
+interface Props extends HTMLAttributes<'a'> {
+  href: string
+}
+
+const { href, ...attrs } = Astro.props
+
+const isExternal =
+  href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('#')
+const resolvedHref = isExternal ? href : withBase(href)
+---
+
+<a
+  class="hover:text-accent"
+  href={resolvedHref}
+  target={isExternal ? '_blank' : undefined}
+  rel={isExternal ? 'noopener noreferrer' : undefined}
+  {...attrs}><slot /></a
+>
