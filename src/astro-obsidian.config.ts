@@ -16,7 +16,7 @@ export default defineConfig({
   author: {
     name: 'Kian',
     twitterId: '',
-    avatar: '/avatar-kian.png',
+    avatar: 'avatar-kian.png',
   },
   hero: {
     name: 'Kian',

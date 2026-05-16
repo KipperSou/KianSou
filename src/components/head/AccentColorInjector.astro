@@ -4,9 +4,8 @@
 
   const { color: themeColor } = Config
 
-  function pickRandomAccent() {
-    const seed = (Math.random() * themeColor.accent.length) | 0
-    return themeColor.accent[seed]
+  function pickPrimaryAccent() {
+    return themeColor.accent[0]
   }
 
   function getRgbVal(color: chroma.Color) {
@@ -14,11 +13,11 @@
   }
 
   function injectColor() {
-    const accentColor = pickRandomAccent()
+    const accentColor = pickPrimaryAccent()
 
     const rootBgColor = {
-      light: chroma.mix('rgb(250,250,250)', accentColor.light, 0.05, 'rgb'),
-      dark: chroma.mix('rgb(0,2,18)', accentColor.dark, 0.12, 'rgb'),
+      light: chroma.mix('rgb(248,250,252)', accentColor.light, 0.04, 'rgb'),
+      dark: chroma.mix('rgb(2,6,23)', accentColor.dark, 0.1, 'rgb'),
     }
 
     const $style = document.createElement('style')

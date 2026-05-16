@@ -30,7 +30,7 @@ function Logo() {
       <div className="size-[40px] rounded-2xl overflow-hidden border border-zinc-200 bg-white dark:border-zinc-700 dark:bg-slate-900">
         <img
           className="size-full select-none object-contain object-center p-1"
-          src={author.avatar}
+          src={withBase(author.avatar)}
           alt="Site owner avatar"
         />
       </div>
