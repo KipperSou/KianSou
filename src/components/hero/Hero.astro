@@ -9,7 +9,7 @@ const { hero, author } = Config
 
 <div class="lg:-mt-16 lg:h-dvh lg:min-h-[720px]">
   <div
-    class="relative max-w-[1300px] mx-auto h-full px-4 grid lg:grid-cols-2 items-center justify-items-center"
+    class="relative max-w-[1300px] mx-auto h-full px-4 grid lg:grid-cols-[minmax(0,590px)_minmax(320px,420px)] items-center justify-between gap-10"
   >
     <div class="mt-[120px] lg:mt-0 max-w-[590px]">
       <h1 class="text-3xl text-center lg:text-left text-balance">
@@ -20,16 +20,19 @@ const { hero, author } = Config
       <div class="text-sm text-secondary mt-3 text-center lg:text-left">{hero.description}</div>
       <SocialList className="mt-[60px]" client:load />
     </div>
-    <div class="mt-20 lg:mt-0">
-      <div
-        class="size-[220px] lg:size-[320px] rounded-[2rem] overflow-hidden border border-primary bg-white dark:bg-slate-900 shadow-sm"
-      >
-        <img
-          class="size-full object-contain object-center p-3"
-          src={withBase(author.avatar)}
-          alt="Site owner avatar"
-          loading="lazy"
-        />
+
+    <div class="mt-14 lg:mt-0 flex justify-center lg:justify-end">
+      <div class="relative w-[280px] h-[380px] lg:w-[360px] lg:h-[460px]">
+        <div class="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-slate-900/90 to-slate-800/70 ring-1 ring-white/10 shadow-2xl shadow-black/30 backdrop-blur-sm"></div>
+        <div class="absolute -inset-3 -z-1 rounded-[2.4rem] bg-accent/10 blur-2xl"></div>
+        <div class="absolute inset-[18px] rounded-[1.5rem] bg-white/95 overflow-hidden">
+          <img
+            class="size-full object-cover object-top scale-[1.22]"
+            src={withBase(author.avatar)}
+            alt="Site owner avatar"
+            loading="lazy"
+          />
+        </div>
       </div>
     </div>
 
