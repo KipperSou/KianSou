@@ -7,7 +7,7 @@ export default defineConfig({
   site: {
     url: siteUrl,
     title: "Kian's Notes",
-    description: '一个用 Astro 构建的个人静态博客，记录代码、产品和长期思考。',
+    description: '一个用 Astro 构建的个人静态博客，记录代码、产品、项目复盘和长期思考。',
     keywords: 'Kian, blog, Astro, static blog, notes, writing',
     lang: 'zh-CN',
     favicon: '/favicon.ico',
@@ -16,7 +16,7 @@ export default defineConfig({
   author: {
     name: 'Kian',
     twitterId: '',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=240&q=80',
+    avatar: '/avatar-kian.png',
   },
   hero: {
     name: 'Kian',
@@ -26,7 +26,7 @@ export default defineConfig({
       {
         name: 'Github',
         icon: 'icon-github',
-        url: 'https://github.com/your-username/personal-blog',
+        url: 'https://github.com/KipperSou/KianSou',
         color: 'rgb(24, 23, 23)',
       },
       {
@@ -40,28 +40,26 @@ export default defineConfig({
   },
   color: {
     accent: [
-      { light: '#F55555', dark: '#FCCF31' },
-      { light: '#0396FF', dark: '#ABDCFF' },
-      { light: '#fb7287', dark: '#99D8CF' },
-      { light: '#F072B6', dark: '#FFF886' },
-      { light: '#9F44D3', dark: '#E2B0FF' },
-      { light: '#FF6666', dark: '#A1CCD1' },
-      { light: '#F6416C', dark: '#838BC6' },
-      { light: '#32CCBC', dark: '#90F7EC' },
-      { light: '#33A6B8', dark: '#79F1A4' },
-      { light: '#F55555', dark: '#FCCF31' },
+      { light: '#2563EB', dark: '#60A5FA' },
+      { light: '#0F766E', dark: '#5EEAD4' },
+      { light: '#334155', dark: '#CBD5E1' },
+      { light: '#1D4ED8', dark: '#93C5FD' },
+      { light: '#166534', dark: '#86EFAC' },
+      { light: '#0F172A', dark: '#94A3B8' },
+      { light: '#1E40AF', dark: '#7DD3FC' },
+      { light: '#155E75', dark: '#67E8F9' },
     ],
     bg: {
-      primary: { light: '#ffffff', dark: '#1c1c1e' },
-      secondary: { light: '#f4f4f5', dark: '#27272a' },
+      primary: { light: '#fbfcfe', dark: '#111827' },
+      secondary: { light: '#eef2f7', dark: '#1f2937' },
     },
     text: {
-      primary: { light: '#373a3c', dark: '#ffffff' },
-      secondary: { light: '#71717a', dark: '#d1d5db' },
+      primary: { light: '#1f2937', dark: '#f9fafb' },
+      secondary: { light: '#64748b', dark: '#cbd5e1' },
     },
     border: {
-      primary: { light: '#e4e4e7', dark: '#3f3f46' },
-      secondary: { light: '#e4e4e7', dark: '#3f3f46' },
+      primary: { light: '#d7dee8', dark: '#374151' },
+      secondary: { light: '#e5ebf3', dark: '#475569' },
     },
   },
   menus: [
@@ -100,7 +98,7 @@ export default defineConfig({
   comments: {
     enable: false,
     giscus: {
-      repo: 'your-username/personal-blog',
+      repo: 'KipperSou/KianSou',
       repoId: '',
       category: 'Announcements',
       categoryId: '',

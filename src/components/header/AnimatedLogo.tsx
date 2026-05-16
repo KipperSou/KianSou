@@ -27,11 +27,13 @@ export function AnimatedLogo() {
 function Logo() {
   return (
     <a className="block" href={withBase('/')} title="Nav to home">
-      <img
-        className="size-[40px] select-none object-cover rounded-2xl"
-        src={author.avatar}
-        alt="Site owner avatar"
-      />
+      <div className="size-[40px] rounded-2xl overflow-hidden border border-zinc-200 bg-white dark:border-zinc-700 dark:bg-slate-900">
+        <img
+          className="size-full select-none object-contain object-center p-1"
+          src={author.avatar}
+          alt="Site owner avatar"
+        />
+      </div>
     </a>
   )
 }

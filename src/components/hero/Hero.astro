@@ -14,16 +14,21 @@ const { hero, author } = Config
       <h1 class="text-3xl text-center lg:text-left text-balance">
         Hi there, I'm
         <Highlight class="font-bold">{hero.name}</Highlight>
-        👋<br />{hero.bio}
+        <br />{hero.bio}
       </h1>
       <div class="text-sm text-secondary mt-3 text-center lg:text-left">{hero.description}</div>
       <SocialList className="mt-[60px]" client:load />
     </div>
     <div class="mt-20 lg:mt-0">
       <div
-        class="size-[200px] lg:size-[300px] rounded-full overflow-hidden border border-primary bg-zinc-100 dark:bg-zinc-800"
+        class="size-[220px] lg:size-[320px] rounded-[2rem] overflow-hidden border border-primary bg-white dark:bg-slate-900 shadow-sm"
       >
-        <img class="size-full" src={author.avatar} alt="Site owner avatar" loading="lazy" />
+        <img
+          class="size-full object-contain object-center p-3"
+          src={author.avatar}
+          alt="Site owner avatar"
+          loading="lazy"
+        />
       </div>
     </div>
 

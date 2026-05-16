@@ -49,6 +49,10 @@ pnpm preview
 - `src/content/spec/about.md`：关于页
 - `src/content/spec/friends.md`：友链页说明
 
+日常运营可直接参考：
+
+- `docs/BLOG-OPERATIONS.md`
+
 ## GitHub Pages 部署
 
 1. 新建一个 GitHub 仓库，例如 `personal-blog`
