@@ -17,7 +17,7 @@
 
     const rootBgColor = {
       light: chroma.mix('rgb(248,250,252)', accentColor.light, 0.04, 'rgb'),
-      dark: chroma.mix('rgb(2,6,23)', accentColor.dark, 0.1, 'rgb'),
+      dark: chroma(themeColor.bg.primary.dark),
     }
 
     const $style = document.createElement('style')

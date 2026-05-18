@@ -50,16 +50,16 @@ export default defineConfig({
       { light: '#155E75', dark: '#67E8F9' },
     ],
     bg: {
-      primary: { light: '#fbfcfe', dark: '#111827' },
-      secondary: { light: '#eef2f7', dark: '#1f2937' },
+      primary: { light: '#fbfcfe', dark: '#050505' },
+      secondary: { light: '#eef2f7', dark: '#111111' },
     },
     text: {
       primary: { light: '#1f2937', dark: '#f9fafb' },
       secondary: { light: '#64748b', dark: '#cbd5e1' },
     },
     border: {
-      primary: { light: '#d7dee8', dark: '#374151' },
-      secondary: { light: '#e5ebf3', dark: '#475569' },
+      primary: { light: '#d7dee8', dark: '#262626' },
+      secondary: { light: '#e5ebf3', dark: '#3f3f46' },
     },
   },
   menus: [
